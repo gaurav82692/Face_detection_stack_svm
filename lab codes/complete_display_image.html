@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sharkface_RECOGNITION</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+    	#hero{
+    		height:100vh;
+
+        font-family: 'Open Sans', sans-serif;
+       background: url({{ url_for('static', filename='face.jpg') }}) no-repeat;
+       background-size:cover;
+      min-height: 400px;
+       position: relative;
+       background-position:left;
+       background-opacity:0.4;
+    }
+/*     #header{
+    background-color: black;
+    width: 100%;
+    height:80px;
+    padding-left: 60px;
+	}
+	#header > a{
+	margin-top: -80px;
+	margin-left: 90%;
+	} */
+    </style>
+</head>
+<body>
+<!-- 	<div class="container-fluid" id="header">
+    <img src="/static/covi3.png" width=120px height=70px>
+    <a role="button" class="btn btn-success" href="http://covidplus.live"><strong>Go Back</strong>
+    </a>
+	</div> -->
+
+	<div class="container-fluid" id="hero">
+		<div class="container" style="margin-left: 8rem;">
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<p>
+<img src=" {{url_for('send_image', filename=image_name, pred_name=pred_name)}}" height=30% width=30%>
+</p>
+<br>
+<h2 style="font-size: 30px;color:green;"><strong>You are</strong></h2>
+<h1 style="color: white;"> {{ pred_name }} </h1>
+<br>
+<a role="button" class="btn btn-success" href="{{ url_for('back') }}">Go back</a>
+		</div>
+	</div>
+</body>
+</html>
