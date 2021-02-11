@@ -1,0 +1,9 @@
+Script started :: 2020-10-16 12:22:09.837548
+Started Processing for celebrityData structure from DataSet :: 2020-10-16 12:22:09.837548
+Succesfully Processed celebrityData structure from DataSet :: 2020-10-16 12:22:12.746191
+Started Processing for celebrityImageData structure from DataSet :: 2020-10-16 12:22:12.746191
+Succesfully Processed celebrityImageData structure from DataSet :: 2020-10-16 14:04:23.706487
+Joining Dataframes :: 2020-10-16 14:04:23.722087
+Starting Restructuring Folder Images :: 2020-10-16 14:04:23.956445
+Completed Restructuring Folder Images :: 2020-10-16 15:13:29.586643
+Script Ended :: 2020-10-16 15:13:30.925595
